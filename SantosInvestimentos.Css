@@ -1,0 +1,123 @@
+body {
+    width: 99%;
+    height: 100%;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+nav {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    position: fixed;
+    margin-top: 20px;
+    text-align: center;   
+}
+
+#navigator ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 27%;
+}
+
+#navigator ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.btn {
+    padding: 10px 8px;
+    color: rgb(70, 170, 78);
+    border: 1px solid rgb(193, 196, 57);
+    border-radius: 20px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    transition: 1s;
+}
+
+#merchan {
+    width: 100%;
+    display: flex;
+    position: relative;   
+}
+
+#merchan img {
+    display: flex;
+    width: 100%;
+    opacity: 90%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.membership {
+    border-right: 1px solid rgb(193, 196, 57);
+    border-left: 1px solid rgb(193, 196, 57);
+    margin-right: 40px;
+    padding: 30px;
+    text-align: center;
+}
+
+.membership h1 {
+       
+}
+
+.membership p {
+
+}
+
+#company {
+    display: flex;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+#company img {
+    border: 1px solid rgb(193, 196, 57);
+    border-radius: 5px;
+}
+
+#weare {
+   padding: 20px;
+   margin-top: 10%;
+}
+
+#company h1 {
+    
+}
+
+#company p {
+
+}
+
+.products {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    align-items: center;
+}
+
+footer {
+     
+}
+
+.backg {
+
+    
+}
+
+.copyright {
+
+
+}
+
