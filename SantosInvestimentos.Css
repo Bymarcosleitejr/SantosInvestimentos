@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+	--color-neutral-0: rgb(27, 73, 31);
+	--color-neutral-10: rgb(35, 94, 40);
+	--color-neutral-20: rgb(46, 122, 52);
+	--color-neutral-30: rgb(70, 170, 78);
+}
+
 body {
-    width: 99%;
-    height: 100%;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    width: 100%;
+    
 }
 
 nav {
@@ -18,17 +32,18 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 27%;
+    margin-left: 33%;
 }
 
 #navigator ul li {
     list-style: none;
     margin-right: 20px;
+    font-weight: 600;
 }
 
 .btn {
     padding: 10px 8px;
-    color: rgb(70, 170, 78);
+    color: rgb(46, 122, 52);
     border: 1px solid rgb(193, 196, 57);
     border-radius: 20px;
     text-align: center;
@@ -55,7 +70,7 @@ nav {
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -65,14 +80,6 @@ nav {
     margin-right: 40px;
     padding: 30px;
     text-align: center;
-}
-
-.membership h1 {
-       
-}
-
-.membership p {
-
 }
 
 #company {
@@ -92,14 +99,6 @@ nav {
    margin-top: 10%;
 }
 
-#company h1 {
-    
-}
-
-#company p {
-
-}
-
 .products {
     padding: 10px;
     text-align: center;
@@ -108,16 +107,129 @@ nav {
 }
 
 footer {
-     
+    width: 100%;
+    color: var(--color-neutral-40);
 }
 
-.backg {
-
-    
+.footer-link {
+    text-decoration: none;
 }
 
-.copyright {
-
-
+#footer_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
 }
 
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#linkedin {
+    background: linear-gradient(#6f9af0, #c2ced3);
+}
+
+#twitter {
+    background: linear-gradient(#2566e7, #4b56fa);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    margin-left: 100px;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 196, 57);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    border: none;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}

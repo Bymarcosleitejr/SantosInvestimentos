@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="SantosInvestimentos.Css">
+
     <title>Santos Investimentos</title>
+
 </head>
 
 <body>
@@ -87,41 +93,31 @@
         <div id="setups">
 
             <h1>Paula</h1>
-            <p>This strategy is based on bla bla bla...</p>
+            <p>Created by Joe Ross, it is a higher risk setup because it is countertrend. It can be used for Day Trade, Swing Trade and Position.<br/> To identify, it is necessary to insert the Bollinger Bands in the chart, with a Simple Moving Average of 20 periods and width (deviation) 2.
+            A certain candle closes below the lower Bollinger band. If the next candle closes within the Bands, its maximum is marked. Breaking this maximum will trigger the operation and the STOP will be at the lower minimum of the two Candles (the one that closed outside the bands and the one that closed inside the bands).</p>
 
         </div>
 
         <div id="setups">
 
             <h1>Principe de NY</h1>
-            <p>This strategy is based on bla bla bla...</p>
+            <p>The Prince of New York is a very assertive setup for Mini Index. It was created by Rodrigo Cohen to color the candles that show a signal to enter operations.<br/>
+            The foundation of the operation consists of a coloring rule that paints the target candles in green, signaling a possible purchase, or red, signaling a possible sale.<br/>
+            Its setup is based on: Mini Index, 5-minute chart, “Prince of NY” coloring rule, slow Stochastic indicator, target gain of 100 points and Stop loss of 250 points.</p>
 
         </div>
 
         <div id="setups">
 
             <h1>Cerca Elétrica</h1>
-            <p>This strategy is based on bla bla bla...</p>
+            <p>This which he calls Electric Fence, combines a trend, moving averages and the Renko chart and seeks a gain of 100 points per operation in the Ibovespa futures mini-contracts.<br/>
+            According to him, the technique is very easy to execute, but the trader should pay attention to one point: the market needs to be in a trend (be it high or low) to work.<br/>                
+            Identifying the trend, the investor goes to the moving averages. The idea is to buy or sell an asset whenever it returns to the 66-period exponential moving average on the Renko chart. “This is not a mean-crossing strategy, but a classic return-to-mean operation,” he explains.<br/>             
+            The goal is to earn, on average, 100 points per operation, but with alternations it can reach much more than that, says the analyst.</p>
 
         </div>
 
     </div>
-
-    <section id="contacts">
-
-        <p align="center">  
-            <a href="https://twitter.com/Bymarcosleitejr" target="_blank">
-              <img align="center" src="https://img.shields.io/badge/-Bymarcosleitejr-05122A?style=flat&logo=twitter" alt="twitter"/>  
-            </a>
-            <a href="https://linkedin.com/in/Bymarcosleite" target="_blank">
-              <img align="center" src="https://img.shields.io/badge/-Bymarcosleite-05122A?style=flat&logo=linkedin" alt="linkedin"/>
-            </a>
-            <a href="https://instagram.com/Bymarcosleite" target="_blank">
-             <img align="center" src="https://img.shields.io/badge/-Bymarcosleite-05122A?style=flat&logo=instagram" alt="instagram"/>
-            </a>
-        </p>
- 
-    </section>
 
 </main>
 
@@ -129,16 +125,72 @@
 
 <footer>
 
-    <div class="backg">
-        
+    <div id="footer_content">
+
+        <div id="footer_contacts">
+
+            <h1>Santos IA</h1>
+            <p>Invista com inteligência. Invista com segurança.</p>
+
+            <div id="footer_social_media">
+                
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            
+                <a href="#" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>    
+
+                <a href="#" class="footer-link" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+            </div>
+            
+        </div>
+
+        <ul class="footer-list">
+
+            <li>
+                <h3>Catalog</h3>
+            </li>
+
+            <li>
+                <a href="#" class="footer-link">Company</a>
+            </li>
+
+            <li>
+                <a href="#" class="footer-link">Products</a>
+            </li>
+
+            <li>
+                <a href="#" class="footer-link">Setups</a>
+            </li>
+
+        </ul>
+
+        <div id="footer_subscribe">
+
+            <h3>Subscribe</h3>
+
+            <p>
+                Enter your e-mail to get notified about our new solutions.   
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>            
+        </div>
     </div>
     
-    <div class="copyright">
-
-        <p>Santos Investimentos e Associados, 2023-&copy;COPYRIGHT.</p>
-
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved.
     </div>
-
 </footer>
 
 </html>
