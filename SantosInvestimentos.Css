@@ -83,6 +83,7 @@ nav {
 }
 
 #company {
+    margin-top: 80px;
     display: flex;
     text-align: center;
     word-wrap: break-word;
@@ -90,13 +91,21 @@ nav {
 }
 
 #company img {
-    border: 1px solid rgb(193, 196, 57);
     border-radius: 5px;
+    margin-left: 200px;
 }
 
-#weare {
-   padding: 20px;
-   margin-top: 10%;
+#company h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#aboutus {
+    margin-left: 120px;
+    padding: 20px;
+    margin-top: 70px;
+    text-align: center;
+    width: 450px;
 }
 
 #flipcard-title h1 {
@@ -108,11 +117,17 @@ nav {
 }
 
 .flipcard {
-    margin-left: 460px;
     margin-bottom: 230px;
     width: 400px;
     height: 100px;
-    
+    display: flex; 
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.flipcard img {
+    margin-left: 600px;
+    height: 300px;
 }
 
 #fixedinc, #varinc {
