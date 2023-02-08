@@ -99,36 +99,101 @@ nav {
    margin-top: 10%;
 }
 
-.product {
-    padding: 10px;
+#flipcard-title h1 {
     text-align: center;
-    word-wrap: break-word;
-    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    position: relative;
 }
 
-.setup {
+.flipcard {
+    margin-left: 460px;
+    margin-bottom: 230px;
+    width: 400px;
+    height: 100px;
+    
+}
+
+#fixedinc, #varinc {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    transition: 700ms;
+    padding: 20px;
+}
+
+#fixedinc {
+    background: rgb(193, 245, 193);
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid rgb(193, 196, 57);
+    text-align: justify center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#fixedinc h1 {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#varinc {
+    background: rgb(193, 245, 193);
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    border-radius: 20px;
+    border: 1px solid rgb(193, 196, 57);
+    text-align: justify center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#varinc h1 {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flipcard:hover #fixedinc {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+  
+.flipcard:hover #varinc {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+#setup-title h1 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    position: relative;
+}
+
+.card {
     margin-left: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3rem;
+    position: relative;
 }
 
-#readbtn {
-    width: 50px;
-}
-
-#card {
+.setup {
     width: 300px;
-    height: 300px;
+    height: 600px;
     border-radius: 15px;
-    margin-top: 100px;
+    margin-top: 10px;
     border: 1px solid rgb(193, 196, 57);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
     overflow: hidden;
 }
 
-#card::before {
+.setup::before {
     content: '';
     position: absolute;
     top: 0;
@@ -145,8 +210,8 @@ nav {
 
 #stpdesc {
     padding: 20px;
-    text-align: justify;
-    word-wrap: break-word;
+    text-align: center center;
+    word-wrap: normal;
     overflow: hidden;
 }
 
