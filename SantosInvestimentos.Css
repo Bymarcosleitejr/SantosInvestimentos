@@ -8,15 +8,16 @@
 }
 
 :root {
-	--color-neutral-0: rgb(27, 73, 31);
-	--color-neutral-10: rgb(35, 94, 40);
-	--color-neutral-20: rgb(46, 122, 52);
-	--color-neutral-30: rgb(70, 170, 78);
+	--color-neutral-0: rgb(138, 4, 4);
+	--color-neutral-10: rgb(192, 8, 8);
+	--color-neutral-20: rgb(192, 24, 24);
+	--color-neutral-30: rgb(250, 70, 70);
+    --color-neutral-40: rgb(193, 196, 57);
 }
 
 body {
     width: 100%;
-    
+    align-items: center;
 }
 
 nav {
@@ -68,17 +69,86 @@ nav {
     opacity: 90%;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+#membership-title h1 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    position: relative;
 }
 
 .membership {
-    border-right: 1px solid rgb(193, 196, 57);
-    border-left: 1px solid rgb(193, 196, 57);
-    margin-right: 40px;
-    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    align-items: center;
+}
+
+.membership img {
+    border-radius: 15px;
+    height: 300px;
+}
+
+.cart {
+    width: 300px;
+    height: 50px;
+    border: rgb(193, 196, 57);
+    border-radius: 15px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.mbrfront, .mbrback {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    transition: 1400ms;
+    padding: 20px;
+}
+
+.mbrfront {
+    background: rgb(131, 39, 39);
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid rgb(193, 196, 57);
+    text-align: justify center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mbrback {
+    background: rgb(131, 39, 39);
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    border-radius: 20px;
+    border: 1px solid rgb(193, 196, 57);
+    text-align: justify center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cart:hover .mbrfront {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.cart:hover .mbrback {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.mbrfront h1 {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mbrback h1 {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -134,12 +204,12 @@ nav {
     position: absolute;
     width: 400px;
     height: 200px;
-    transition: 700ms;
+    transition: 1400ms;
     padding: 20px;
 }
 
 #fixedinc {
-    background: rgb(193, 245, 193);
+    background: rgb(131, 39, 39);
     z-index: 1;
     border-radius: 20px;
     border: 1px solid rgb(193, 196, 57);
@@ -155,7 +225,7 @@ nav {
 }
 
 #varinc {
-    background: rgb(193, 245, 193);
+    background: rgb(131, 39, 39);
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     border-radius: 20px;
@@ -232,7 +302,6 @@ nav {
 
 footer {
     width: 100%;
-    color: var(--color-neutral-40);
 }
 
 .footer-link {
@@ -261,7 +330,7 @@ footer {
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
-    color: var(--color-neutral-40);
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     transition: all 0.4s;
 }
@@ -295,12 +364,12 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: rgb(59, 56, 56);
     transition: all 0.4s;
 }
 
 .footer-list .footer-link:hover {
-    color: #7f37c9;
+    color: rgb(131, 39, 39);
 }
 
 #footer_subscribe {
@@ -312,7 +381,7 @@ footer {
 #input_group {
     display: flex;
     align-items: center;
-    background-color: rgb(193, 196, 57);
+    background-color: rgb(131, 39, 39);
     border-radius: 4px;
 }
 
