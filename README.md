@@ -9,7 +9,8 @@ Best Regards,
 <br>
 Marcos Leite Jr.
 </p>
-  
+ 
+<br></br>
 <p align="center">  
 <a href="https://twitter.com/Bymarcosleitejr" target="_blank">
   <img align="center" src="https://img.shields.io/badge/-Bymarcosleitejr-05122A?style=flat&logo=twitter" alt="twitter"/>  
@@ -21,7 +22,7 @@ Marcos Leite Jr.
  <img align="center" src="https://img.shields.io/badge/-Bymarcosleite-05122A?style=flat&logo=instagram" alt="instagram"/>
 </a>
 </p>
-
+<br></br>
 <h2 align="center">
 :books: Santos Project :computer:
   
