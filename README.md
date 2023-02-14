@@ -1,7 +1,4 @@
-<br></br>
-<img align="center" width="1000em" src="https://raw.githubusercontent.com/gist/Bymarcosleitejr/dfc6e12ed6a73c124d2f13af78837d8d/raw/1f04a2f367f5869067969e911db3a8eff40f6ab5/Merchan%20test.svg">
-<h1></h1>
-
+<img align="right" width="300em" src="https://raw.githubusercontent.com/gist/Bymarcosleitejr/dfc6e12ed6a73c124d2f13af78837d8d/raw/1f04a2f367f5869067969e911db3a8eff40f6ab5/Merchan%20test.svg">
 <p>
 #SantosInvestimentos is a studying project based on my final paper (TCC in portuguese) where I'm planning to learn how to use correctly the HTML, CSS, JS and PHP. 
 The main idea is to set a Investment Company's website to show their financial, projections and how they operate willing to retain more investors. All thoses infos about this company are fictionals!
